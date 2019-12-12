@@ -16,11 +16,19 @@ But : utiliser le plugin "**promoted builds**" pour valider manuellement le dép
 - Paramètre string : WORKSPACE\_PARENT
 - Actions :
 1. Prends en paramètre le workspace du build parent (WORKSPACE\_PARENT)  
+
 <img src="images/jenkins1_sol8.png" alt="Jenkins" width="1042"/>
+
 2. Activer l'option "**Promote builds when...**", spécifier un critère et une action
+
 <img src="images/option1_sol2.png" alt="Jenkins" width="1042"/>
+
 <img src="images/option1_sol3.png" alt="Jenkins" width="1042"/>
+
 3. Modifier l'item "**Petclinic_package**" qui doit maintenant appeler ce nouvel item.
+
 <img src="images/option1_sol4.png" alt="Jenkins" width="1042"/>
+
 4. Lancer un build de l'item "**Petclinic\_compile**" manuellement
+
 <img src="images/option1_sol5.png" alt="Jenkins" width="1042"/>
