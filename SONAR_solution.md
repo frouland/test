@@ -46,10 +46,12 @@ mvn clean verify sonar:sonar -Dsonar.host.url=http://<IP_SERVEUR_SONAR>:9000
 # Ajout d'un nouveau bug
 - A partir du menu "**Rules**", sélectionner une règle de type "**Bug**" dans le langage "**Java**"  
 - Copier la partie "**Noncompliant Code Example**" de cette règle et coller les lignes dans un fichier source Java du projet spring-framework-petclinic  
+
 <img src="images/sonar_sol1.png" alt="Sonarqube" width="1042"/>
+
 - Relancer une analyse Sonar :  
 ```
-mvn clean verify sonar:sonar -Dsonar.host.url=http://<IP_SERVEUR_SONAR>:9000
+mvn clean verify sonar:sonar -Dsonar.host.url=http://<IP_SERVEUR_SONAR>:9000  
 ```
 - Vérifier que votre nouveau bug est bien remonté dans l'analyse Sonar
 <img src="images/sonar_sol2.png" alt="Sonarqube" width="1042"/>  
