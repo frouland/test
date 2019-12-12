@@ -49,31 +49,31 @@ dos2unix /usr/share/maven/conf/settings.xml
 
 
 # Création d'un projet free-style
-- Créer un projet free-style nommé "**Petclinic**" qui devra :
-1. Récupérer les sources de **spring-framework-petclinic** dans GitHub
-<img src="images/jenkins_sol3.png" alt="Jenkins" width="1042"/>
-2. Créer une tâche du build avec le type "**Invoquer les cibles Maven de haut niveau**"
-3. Sélectionner la version de maven
+- Créer un projet free-style nommé "**Petclinic**" qui devra :  
+1. Récupérer les sources de **spring-framework-petclinic** dans GitHub  
+<img src="images/jenkins_sol3.png" alt="Jenkins" width="1042"/>  
+2. Créer une tâche du build avec le type "**Invoquer les cibles Maven de haut niveau**"  
+3. Sélectionner la version de maven  
 4. Appel des cibles "**clean package**"  
-5. Dans "**Avancé...**", ajouter la propriété "**skipTests=true**" pour éviter le lancement des tests
-<img src="images/jenkins_sol4.png" alt="Jenkins" width="1042"/>
+5. Dans "**Avancé...**", ajouter la propriété "**skipTests=true**" pour éviter le lancement des tests  
+<img src="images/jenkins_sol4.png" alt="Jenkins" width="1042"/>  
 6. Lancer le build manuellement  
 <img src="images/jenkins_sol10.png" alt="Jenkins" width="200"/>  
-7. Consulter le log du build et l'espace de travail
-<img src="images/jenkins_sol5.png" alt="Jenkins" width="1042"/>
-<img src="images/jenkins_sol6.png" alt="Jenkins" width="1042"/>
-8. Ajouter une nouvelle tâche dans le build pour renommer le fichier **petclinic.war** généré dans le dossier target du workspace. Le fichier sera renommé de la façon suivante : petclinic-NUM_BUILD-TIMESTAMP.war Exemple : petclinic-4-20191210102322.war 
+7. Consulter le log du build et l'espace de travail  
+<img src="images/jenkins_sol5.png" alt="Jenkins" width="1042"/>    
+<img src="images/jenkins_sol6.png" alt="Jenkins" width="1042"/>   
+8. Ajouter une nouvelle tâche dans le build pour renommer le fichier **petclinic.war** généré dans le dossier target du workspace. Le fichier sera renommé de la façon suivante : petclinic-NUM_BUILD-TIMESTAMP.war Exemple : petclinic-4-20191210102322.war  
 > Astuce :  
 > DATE\_WITH\_TIME=`date "+%Y%m%d-%H%M%S"`;   
 > NEW\_NAME="petclinic\_$BUILD\_NUMBER-$DATE\_WITH\_TIME.war";  
 
-<img src="images/jenkins_sol7.png" alt="Jenkins" width="1042"/>
-9. Ajouter une action à la suite du build pour archiver l'artifact généré (fichier WAR)
-<img src="images/jenkins_sol8.png" alt="Jenkins" width="1042"/>
+<img src="images/jenkins_sol7.png" alt="Jenkins" width="1042"/>  
+9. Ajouter une action à la suite du build pour archiver l'artifact généré (fichier WAR)  
+<img src="images/jenkins_sol8.png" alt="Jenkins" width="1042"/>  
 10. Lancer le build manuellement  
 <img src="images/jenkins_sol10.png" alt="Jenkins" width="200"/>  
-12. (En option) Ajouter une action pour supprimer le workspace une fois le build terminé
-<img src="images/jenkins_sol9.png" alt="Jenkins" width="1042"/>
+12. (En option) Ajouter une action pour supprimer le workspace une fois le build terminé  
+<img src="images/jenkins_sol9.png" alt="Jenkins" width="1042"/>  
 
 
 
