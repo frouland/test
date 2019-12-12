@@ -47,7 +47,8 @@ pipeline {
 - Nom : Petclinic_deployQualification
 - Type : Pipeline
 <img src="images/option2_sol2.png" alt="Jenkins" width="1042"/>
-- Déclarer un pipeline avec la définition "**Pipeline script from SCM**"
+
+- Déclarer un pipeline avec la définition "**Pipeline script from SCM**"  
 - Choisir le SCM "**Git**" et renseigner les informations du repository
 <img src="images/option2_sol1.png" alt="Jenkins" width="1042"/>
 - Ouvrir le pipeline avec "**Open Blue Ocean**"
