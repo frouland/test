@@ -75,8 +75,9 @@ dos2unix /usr/share/maven/conf/settings.xml
 
 <img src="images/jenkins_sol6.png" alt="Jenkins" width="1042"/>   
 
-8. Ajouter une nouvelle tâche dans le build pour renommer le fichier **petclinic.war** généré dans le dossier target du workspace. 
-Le fichier sera renommé de la façon suivante : petclinic-NUM_BUILD-TIMESTAMP.war Exemple : petclinic-4-20191210102322.war  
+8. Ajouter une nouvelle tâche dans le build pour renommer le fichier **petclinic.war** généré dans le dossier target du workspace.  
+Le fichier sera renommé de la façon suivante : petclinic-NUM_BUILD-TIMESTAMP.war  
+Exemple : petclinic-4-20191210102322.war  
 
 > Astuce :  
 > DATE\_WITH\_TIME=`date "+%Y%m%d-%H%M%S"`;   
