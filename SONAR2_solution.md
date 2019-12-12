@@ -64,4 +64,4 @@ sonar.projectBaseDir=$WORKSPACE_PARENT
 
 <img src="images/sonar2_sol10.png" alt="Sonarqube" width="1042"/>
 
-
+- Lancer un build
