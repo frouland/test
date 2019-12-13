@@ -32,7 +32,7 @@ docker exec -it JenkinsCI cat /var/jenkins_home/secrets/initialAdminPassword
 docker exec -it JenkinsCI bash  
 dos2unix /usr/share/maven/conf/settings.xml   
 ``` 	
-- Editer le fichier "**/usr/share/maven/conf/settings.xml**" et ajouter les lignes suivantes dans la section **proxies** (remplacer **[ADRESSE\_IP\_UBUNTU]** par l'addresse IP du serveur Ubuntu):   
+- Editer le fichier "**/usr/share/maven/conf/settings.xml**" et ajouter les lignes suivantes dans la section **proxies** (remplacer **[ADRESSE\_IP\_UBUNTU]** par l'addresse IP du serveur Ubuntu) :   
 ```xml
 <proxy>  
 	<id>optional</id>  
