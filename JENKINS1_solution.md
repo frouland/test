@@ -65,11 +65,11 @@
 2. Lance la tâche maven "**package**"  
 <img src="images/jenkins1_sol9.png" alt="Jenkins" width="1042"/>
 
-- Dans la section build, spécifier le répertoire de travail spécifique avec la valeur $WORKSAPCE\_PARENT  
+- Dans la section build, spécifier le répertoire de travail spécifique avec la valeur $WORKSPACE\_PARENT  
 
 <img src="images/jenkins1_sol10.png" alt="Jenkins" width="1042"/>
 
-- Modifier l'item "**Petclinic\_compile**" pour ajouter l'appel à l'item "**Petclinic\_package**" après le lancement de la tâche maven "**clean compile**". Initialiser la variable WORKSPACE\_PARENT avec le workspace de l'item "**Petclinic\_compile**"  
+- Modifier l'item "**Petclinic\_compile**" pour ajouter l'appel à l'item "**Petclinic\_package**" après le lancement de la tâche maven "**clean compile**". Initialiser la variable WORKSPACE\_PARENT avec le workspace de l'item "**Petclinic\_compile**" ("**Predefined parameters**" avec le paramètre : **WORKSPACE_PARENT=$WORKSPACE**)
 
 > Astuce : Chaîner les items en utilisant une action "**Trigger parameterized build on other projects**"  
 
@@ -92,7 +92,7 @@
 
 <img src="images/jenkins1_sol13.png" alt="Jenkins" width="1042"/>
 
-- Dans la section build, spécifier le répertoire de travail spécifique avec la valeur $WORKSAPCE\_PARENT  
+- Dans la section build, spécifier le répertoire de travail spécifique avec la valeur $WORKSPACE\_PARENT  
 
 <img src="images/jenkins1_sol10.png" alt="Jenkins" width="1042"/>
 

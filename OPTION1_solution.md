@@ -19,16 +19,31 @@ But : utiliser le plugin "**promoted builds**" pour valider manuellement le dép
 
 <img src="images/jenkins1_sol8.png" alt="Jenkins" width="1042"/>
 
-2. Activer l'option "**Promote builds when...**", spécifier un critère et une action
+2. Activer l'option "**Promote builds when...**" :
+	- Sélectionner le critère "**Only when manually approved**"
 
-<img src="images/option1_sol2.png" alt="Jenkins" width="1042"/>
+	<img src="images/option1_sol2.png" alt="Jenkins" width="1042"/>
 
-<img src="images/option1_sol3.png" alt="Jenkins" width="1042"/>
+	- Ajouter une action de type "**Trigger parameterized build on other projects**" qui appelle l'item "**Petclinic\_deployQualification**" avec le "**Predefined parameters**" "**WORKSPACE\_PARENT=$WORKSPACE**"
+
+	<img src="images/option1_sol3.png" alt="Jenkins" width="1042"/>
 
 3. Modifier l'item "**Petclinic_package**" qui doit maintenant appeler ce nouvel item.
 
-<img src="images/option1_sol4.png" alt="Jenkins" width="1042"/>
+	<img src="images/option1_sol4.png" alt="Jenkins" width="1042"/>
 
 4. Lancer un build de l'item "**Petclinic\_compile**" manuellement
 
-<img src="images/option1_sol5.png" alt="Jenkins" width="1042"/>
+	<img src="images/option1_sol5.png" alt="Jenkins" width="1042"/>  
+
+> Astuce : pour regrouper 2 items dans le même groupe de la vue "**Delivery pipeline**", ajouter le même "**Stage name**" sur les 2 items :
+<img src="images/option3.png" alt="Jenkins" width="1042"/>
+A faire pour les items "**Petclinic\_promoteQualifiaction**" et "**Petclinic\_deployQualification**"
+
+
+- Lorsque le build arrivera à l'étape "**Petclinic_promoteQualification**", il faudra alors approuver manuellement le "**Promotion Status**"
+
+<img src="images/option1.png" alt="Jenkins" width="200"/>
+
+<img src="images/option2.png" alt="Jenkins" width="1042"/>
+

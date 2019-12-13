@@ -19,6 +19,10 @@ docker exec -it JenkinsCI bash
 ```
 cd /var/jenkins_home/workspace/Petclinic
 ```
+	- Si le répertoire est vide, récupérer les sources du projet spring-framework-petclinic (remplacer XXXXXXX par votre compte GitHub) :  
+```
+git clone https://github.com/XXXXXXX/spring-framework-petclinic.git
+```
 - Lancer une analyse sonar :   
 ```
 mvn clean verify sonar:sonar -Dsonar.host.url=http://<IP_SERVEUR_SONAR>:9000
