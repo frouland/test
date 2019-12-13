@@ -46,6 +46,7 @@ pipeline {
 - Description : cet item va récupérer automatiquement le Jenkinsfile à la racine du projet et va permettre de lancer les différentes tâches pour le déploiement.
 - Nom : Petclinic_deployQualification
 - Type : Pipeline
+
 <img src="images/option2_sol2.png" alt="Jenkins" width="1042"/>
 
 - Déclarer un pipeline avec la définition "**Pipeline script from SCM**"  
