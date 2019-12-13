@@ -5,6 +5,7 @@
 1. Maven integration
 2. Parameterized Trigger
 3. Delivery Pipeline Plugin
+
 <img src="images/jenkins1_sol1.png" alt="Jenkins" width="1042"/>
 
 ----------
