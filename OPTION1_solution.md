@@ -37,8 +37,8 @@ But : utiliser le plugin "**promoted builds**" pour valider manuellement le dép
 	<img src="images/option1_sol5.png" alt="Jenkins" width="1042"/>  
 
 > Astuce : pour regrouper 2 items dans le même groupe de la vue "**Delivery pipeline**", ajouter le même "**Stage name**" sur les 2 items :
-<img src="images/option3.png" alt="Jenkins" width="1042"/>
-A faire pour les items "**Petclinic\_promoteQualifiaction**" et "**Petclinic\_deployQualification**"
+><img src="images/option3.png" alt="Jenkins" width="1042"/>  
+>A faire pour les items "**Petclinic\_promoteQualifiaction**" et "**Petclinic\_deployQualification**"
 
 
 - Lorsque le build arrivera à l'étape "**Petclinic_promoteQualification**", il faudra alors approuver manuellement le "**Promotion Status**"
